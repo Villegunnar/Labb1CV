@@ -6,23 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link href="/CSS/style.css"  type="text/css" rel="stylesheet"/>
+
     <title>Viktor Gunnarsson</title>
     
 </head>
 <body>
     
 <header>
-    <h1 class="logo">Viktor Gunnarsson</h1>
-    
+    <container class="logo-container">
+    <img class="logoimage" src="/Image/logo7.png" alt="Logo">
+    <h1 class="logotext">Viktor Gunnarsson Portfolio</h1>
+</container>
        <input type="checkbox" id="nav-toggle" class="nav-toggle"></input>
         <nav>
             <ul>
-                <li><a class="active" href="/Index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/education.html">Education</a></li>
+                <li><a class="active" href="/Index.html">Hem</a></li>
+                <li><a href="/about.html">Om mig</a></li>
+                <li><a href="/education.html">Utbildning</a></li>
                 <li><a href="/cv.html">CV</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/contact.html">Kontakt</a></li>
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -31,7 +36,46 @@
     </header>
 
     <div class="content">
-        <h2>This is the home if the website!</h2>
+        
+        <h2 class="welcome">Välkommen till min portofio</h2>
+        <article >
+            <p>Här kan du hitta information om mig, mina utbildningar, mitt cv och kontaktuppgifter.</p>
+            <p>Här är även några project som jag har varit med och gjort:</p>
+            <ul>
+                <li><a class="projects" href="https://github.com/Villegunnar/Project-Lions.git">Lions Bank</a></li>
+                <div class="col-md-12">
+                    <div class="info">
+                      <i class="icon-info-sign"></i>
+                
+                      <span class="extra-info">
+                        projekt som jag gjorde med 3 klasskompisar
+                      </span>
+                    </div><br />
+
+                </div>
+                <li><a class="projects" href="https://github.com/Villegunnar/GymnasieskolaProjektDatabaser.git"> Gymnasieskola Databaser</a></li>
+                <div class="col-md-12">
+                    <div class="info">
+                      <i class="icon-info-sign"></i>
+                
+                      <span class="extra-info">
+                       Projekt som jag gjorde i databaskursen.
+                      </span>
+                    </div><br />
+
+                </div>
+            </ul>
+               
+    
+
+
+     
+
+        </article>
+
+
+
+
       </div>
       
     </body>

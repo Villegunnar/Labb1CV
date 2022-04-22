@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Beau+Rivage&family=Hind+Siliguri:wght@600&family=Poppins:ital@1&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 :root {
-    --background: rgba(55, 202, 153, 0.85);
+    --background: rgb(55, 202, 153);
 }
 
 *, *::before, *::after {
@@ -13,33 +14,72 @@ body {
 	font-weight: 400;
 }
 .content {
-    height: 200vh;
+    height: 300vh;
     background-image: url(//unsplash.it/1000/1000);
     background-color: #333;
     background-blend-mode: multiply;
     background-size: cover;
     display: grid;
     place-items: center;
+    
   }
-  
-  
-  
+ h2{
+     top:140px;
+     color:white;
+     position: absolute;
+     padding: 10px;
+ } 
+ .welcome{
+    font-size: 20px;
+ }
+
+
+.content ul li{
+    padding-left: 20px;
+}
+ article{
+    top: 130px;
+   
+    color:white;
+    position: absolute;
+    padding: 100px;
+    text-align:left ;
+    
+ }
+
 header {
     background: var(--background);
     text-align: center;
     position: fixed;
     z-index: 999;
     width: 100%;
+    font-family: 'Russo One', sans-serif;
     
+}
+.active{
+    color: black;
 }
 .text {
     color: white;
 }
 
 
-.logo {
-    margin: 0;
+.logo-container {
+  display: flex;
+  font-size: 11px;
+  align-items: center;
 }
+   
+
+.logoimage {
+padding: 20px;
+   width: 120px;
+   height: 120px;
+   margin-left: 50px;
+   
+}
+
+
 .nav-toggle{
     display: none;
 }
@@ -106,6 +146,7 @@ nav a {
 }
 nav a:hover {
     color: black;
+    
 }
 .nav-toggle:checked ~ nav{
 transform: scale(1,1);
@@ -114,6 +155,36 @@ transform: scale(1,1);
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
+* {
+    transition: all .2s ease;
+  }
+  
+  .extra-info {
+    display: none;
+    line-height: 30px;
+    font-size: 12px;
+      position: absolute;
+    top: 0;
+    left: 50px;
+  }
+  
+  .info:hover .extra-info {
+    display: block;
+  }
+  
+  .info {
+    font-size: 20px;
+    padding-left: 5px;
+    width: 20px;
+    border-radius: 15px;
+  }
+  
+  .info:hover {
+    background-color: rgb(36, 114, 216);
+    padding: 0 0 0 5px;
+    width: 300px;
+    text-align: left !important;
+  }
 
 @media screen and (min-width: 800px) {
     .nav-toggle-label{
@@ -126,6 +197,12 @@ transform: scale(1,1);
     .logo{
         grid-column: 2/span 1;
     }
+    .picofme{
+        width: 800px;
+        padding-bottom: 85%;
+        
+    }
+
     nav{
         all:unset;
         grid-column:3/4;
